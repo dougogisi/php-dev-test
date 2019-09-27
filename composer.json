@@ -1,0 +1,23 @@
+{
+  "name": "mvf/php-dev-test",
+  "description": "Boilerplate project for developer interview coding test",
+  "type": "project",
+  "require": {
+    "php": "^7.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5"
+  },
+  "license": "UNLICENSED",
+  "authors": [
+    {
+      "name": "Dovydas Rupsys",
+      "email": "dovydas.rupsys@mvfglobal.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Src\\": "src/"
+    }
+  }
+}

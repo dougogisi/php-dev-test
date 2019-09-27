@@ -1,0 +1,7 @@
+version: '3'
+services:
+  main:
+    build: .
+    container_name: php-dev-test-main
+    volumes:
+    - .:/code:cached
