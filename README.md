@@ -1,7 +1,15 @@
 # PHP DEVELOPER TEST
 > Boilerplate project for interview coding test
 
-# Github API Test
+## Available Make Commands
+
+* `make` - Starts container
+* `make build` - Rebuilds container
+* `make shell` - Drops you into a bash shell inside the container
+* `make logs` - Trails container stdout/stderr logs
+* `make test` - Executes unit tests within the container
+
+## Test Instructions
 
 We would like you to build a simple web application, which should allow users to enter an arbitrary Github username, and be presented with a best guess of the Github user's favourite programming language. The code base should be clean (separation concern and apply best practices) with appropriate tests
 
