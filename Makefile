@@ -29,3 +29,7 @@ logs:
 .PHONY: test
 test:
 	docker exec -it php-dev-test-main sh -c "codecept run"
+
+.PHONY: run
+run:
+	docker exec -it php-dev-test-main php entrypoint.php

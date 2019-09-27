@@ -8,6 +8,7 @@
 * `make shell` - Drops you into a bash shell inside the container
 * `make logs` - Trails container stdout/stderr logs
 * `make test` - Executes unit tests within the container
+* `make run` - Executes php entrypoint scripts within the container
 
 ## Test Instructions
 
