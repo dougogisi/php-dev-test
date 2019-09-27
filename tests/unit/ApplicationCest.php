@@ -1,5 +1,7 @@
 <?php
 
+use Src\Application;
+
 class ApplicationCest
 {
     public function _before(UnitTester $I)
@@ -8,6 +10,6 @@ class ApplicationCest
 
     public function shouldReturnZeroExitCodeByDefault(UnitTester $I)
     {
-        $I->assertEquals(0, \Src\Application::run());
+        $I->assertEquals(0, Application::run());
     }
 }

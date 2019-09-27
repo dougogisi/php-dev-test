@@ -13,6 +13,7 @@ rebuild:
 .PHONY: up
 up:
 	docker-compose up -d --remove-orphans
+	docker exec -it php-dev-test-main composer install
 
 .PHONY: down
 down:
