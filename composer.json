@@ -1,6 +1,6 @@
 {
   "name": "mvf/php-dev-test",
-  "description": "Boilerplate project for developer interview coding test",
+  "description": "Boilerplate project for interview coding test",
   "type": "project",
   "require": {
     "php": "^7.1"
