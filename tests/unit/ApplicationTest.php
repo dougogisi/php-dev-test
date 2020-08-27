@@ -2,7 +2,7 @@
 
 use Src\Application;
 
-class ApplicationCest
+class ApplicationTest
 {
     public function _before(UnitTester $I)
     {
