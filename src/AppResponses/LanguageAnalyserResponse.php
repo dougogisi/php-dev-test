@@ -30,6 +30,8 @@ class LanguageAnalyserResponse implements AnalyserResponseInterface
      */
     public function getResult(): string
     {
-        return $this->result[LanguageAnalyser::TOP_LANGUAGE_KEY];
+        return isset($this->result[LanguageAnalyser::TOP_LANGUAGE_KEY]) ?
+            $this->result[LanguageAnalyser::TOP_LANGUAGE_KEY] :
+            '';
     }
 }

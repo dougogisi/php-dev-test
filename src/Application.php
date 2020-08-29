@@ -26,7 +26,7 @@ class Application
             $response = $githubUserClient->fetch();
             $analyser = new LanguageAnalyser($response);
             $result = $analyser->analyse();
-            var_dump($result->getResult());
+            echo $result->getResult() . PHP_EOL;
         } catch(InvalidGithubClientSettings $e) {
             echo 'curl error' . PHP_EOL;
             echo $e->getMessage() . PHP_EOL;

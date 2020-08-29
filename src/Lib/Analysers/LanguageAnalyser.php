@@ -32,7 +32,6 @@ class LanguageAnalyser implements AnalyserInterface
         $rawResult = [];
 
         foreach($this->data->getArray() as $datum) {
-            echo $datum['language'] . PHP_EOL;
             $language = isset($datum[self::DATATYPE]) && !empty($datum['language']) ?
                     $datum[self::DATATYPE] :
                     null;
@@ -41,7 +40,7 @@ class LanguageAnalyser implements AnalyserInterface
                 continue;
             }
 
-            $rawResult[$language] += 1;
+            $rawResult[$language] = !isset($rawResult[$language]) ? 1 : $rawResult[$language] + 1;
         }
 
         arsort($rawResult);
