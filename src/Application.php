@@ -30,7 +30,6 @@ class Application
         } catch(InvalidGithubClientSettings $e) {
             echo 'curl error' . PHP_EOL;
             echo $e->getMessage() . PHP_EOL;
-            return 0;
         }
 
         return 0;
